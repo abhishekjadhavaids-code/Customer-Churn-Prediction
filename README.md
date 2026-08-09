@@ -1,150 +1,65 @@
 # 📊 Customer Churn Prediction
 
-## 📌 Project Overview
+A Machine Learning project that predicts whether a customer is likely to **churn** or **stay** based on their demographic, service, contract, and billing information.
 
-Customer Churn Prediction is a Machine Learning project that predicts whether a customer is likely to leave a service.
-
-The project analyzes customer demographic information, service usage, contract details, payment methods, and billing information to identify customers who are at risk of churning.
-
-This project was developed as part of an internship project.
+The project includes a trained Machine Learning model and an interactive **Streamlit web application** for making customer churn predictions.
 
 ---
 
-## 🎯 Objective
+## 🚀 Project Overview
 
-The main objective of this project is to build a classification model that can predict customer churn and identify customers who may be at risk of leaving a service.
+Customer churn is an important problem for subscription-based businesses.
 
-The project focuses on:
-
-- Understanding customer churn patterns
-- Performing Exploratory Data Analysis
-- Cleaning and preprocessing customer data
-- Training a Machine Learning classification model
-- Evaluating model performance
-- Predicting churn probability
-- Building an interactive Streamlit application
-
----
-
-## 📂 Dataset
-
-The project uses a customer churn dataset containing information about customer demographics, services, contracts, payment methods, and charges.
-
-Important features include:
+This project uses customer information such as:
 
 - Gender
-- Senior Citizen
-- Partner
-- Dependents
+- Senior Citizen status
+- Partner and Dependents
 - Tenure
 - Phone Service
-- Multiple Lines
 - Internet Service
 - Online Security
 - Online Backup
 - Device Protection
 - Tech Support
-- Streaming TV
-- Streaming Movies
-- Contract
+- Streaming Services
+- Contract Type
 - Paperless Billing
 - Payment Method
 - Monthly Charges
 - Total Charges
 
-The target variable is:
+The trained model predicts:
 
-**Churn**
+- **Customer is likely to STAY**
+- **Customer is likely to CHURN**
 
-where:
-
-- `1` represents customer churn
-- `0` represents customer retention
+It also displays the **churn probability** and risk level.
 
 ---
 
-## 🔎 Exploratory Data Analysis
+## 🎯 Features
 
-Exploratory Data Analysis was performed to understand the dataset and identify important churn patterns.
-
-The analysis included:
-
-- Dataset structure
-- Missing value analysis
-- Churn distribution
-- Numerical feature analysis
-- Categorical feature analysis
-- Customer tenure analysis
-- Monthly charges analysis
-- Contract type analysis
-- Correlation analysis
+- Interactive Streamlit web application
+- Customer churn prediction
+- Churn probability calculation
+- Churn risk interpretation
+- Pre-trained Machine Learning model
+- Data preprocessing pipeline
+- User-friendly customer information form
 
 ---
 
-## 🧹 Data Preprocessing
+## 🛠️ Technologies Used
 
-The following preprocessing steps were performed:
-
-1. Removed unnecessary columns
-2. Handled missing values
-3. Converted categorical variables
-4. Prepared numerical features
-5. Applied feature preprocessing
-6. Split the dataset into training and testing sets
-
----
-
-## 🤖 Machine Learning Model
-
-A classification model was trained to predict customer churn.
-
-The project uses:
-
-**Logistic Regression**
-
-Logistic Regression was selected because it is a suitable classification algorithm for predicting binary outcomes such as churn and non-churn.
-
----
-
-## 📊 Model Evaluation
-
-The model was evaluated using:
-
-- Accuracy
-- Recall
-- ROC-AUC
-- Confusion Matrix
-
-These evaluation metrics help measure how effectively the model identifies customers who are likely to churn.
-
----
-
-## 🌐 Streamlit Web Application
-
-An interactive Streamlit application was developed for real-time customer churn prediction.
-
-The application allows users to enter customer information such as:
-
-- Customer demographics
-- Tenure
-- Internet services
-- Contract
-- Payment method
-- Monthly charges
-- Total charges
-
-The application then provides:
-
-- Churn prediction
-- Churn probability
-- Risk level
-- Customer retention recommendation
-
----
-
-## 📸 Application
-
-Screenshots of the application are stored in the `images` folder.
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Joblib
+- Streamlit
+- Jupyter Notebook
+- Git & GitHub
 
 ---
 
@@ -161,16 +76,12 @@ Customer-Churn-Prediction/
 │   ├── churn.csv
 │   └── churn_cleaned.csv
 │
-├── images/
-│
 ├── models/
 │   ├── churn_model.pkl
 │   └── preprocessor.pkl
 │
 ├── notebook/
 │   └── Customer_Churn.ipynb
-│
-├── report/
 │
 ├── .gitignore
 ├── README.md
