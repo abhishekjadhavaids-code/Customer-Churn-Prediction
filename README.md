@@ -1,5 +1,7 @@
 # 📊 Customer Churn Prediction
 
+🔴 **Live Demo:** https://abhishekjadhavaids-code-customer-churn-prediction-appapp-da9gfm.streamlit.app/
+
 A Machine Learning project that predicts whether a customer is likely to **churn** or **stay** based on their demographic, service, contract, and billing information.
 
 The project includes a trained Machine Learning model and an interactive **Streamlit web application** for making customer churn predictions.
