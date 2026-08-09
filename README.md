@@ -1,16 +1,16 @@
 # 📊 Customer Churn Prediction
 
-🔴 **Live Demo:** https://abhishekjadhavaids-code-customer-churn-prediction-appapp-da9gfm.streamlit.app/
+🌐 **Live Demo:** https://customer-churn-predictor-project.streamlit.app/
 
 A Machine Learning project that predicts whether a customer is likely to **churn** or **stay** based on their demographic, service, contract, and billing information.
 
-The project includes a trained Machine Learning model and an interactive **Streamlit web application** for making customer churn predictions.
+The project includes a trained Machine Learning model, data preprocessing pipeline, Jupyter Notebook, and an interactive **Streamlit web application** for making customer churn predictions.
 
 ---
 
 ## 🚀 Project Overview
 
-Customer churn is an important problem for subscription-based businesses.
+Customer churn is an important problem for subscription-based businesses. Identifying customers who are likely to leave can help businesses take appropriate retention actions.
 
 This project uses customer information such as:
 
@@ -19,24 +19,26 @@ This project uses customer information such as:
 - Partner and Dependents
 - Tenure
 - Phone Service
+- Multiple Lines
 - Internet Service
 - Online Security
 - Online Backup
 - Device Protection
 - Tech Support
-- Streaming Services
+- Streaming TV
+- Streaming Movies
 - Contract Type
 - Paperless Billing
 - Payment Method
 - Monthly Charges
 - Total Charges
 
-The trained model predicts:
+The trained Machine Learning model predicts:
 
 - **Customer is likely to STAY**
 - **Customer is likely to CHURN**
 
-It also displays the **churn probability** and risk level.
+The application also displays the **churn probability** and **risk level**.
 
 ---
 
@@ -47,8 +49,10 @@ It also displays the **churn probability** and risk level.
 - Churn probability calculation
 - Churn risk interpretation
 - Pre-trained Machine Learning model
-- Data preprocessing pipeline
+- Saved preprocessing pipeline
 - User-friendly customer information form
+- Jupyter Notebook containing the Machine Learning workflow
+- Local deployment using Streamlit
 
 ---
 
@@ -61,7 +65,8 @@ It also displays the **churn probability** and risk level.
 - Joblib
 - Streamlit
 - Jupyter Notebook
-- Git & GitHub
+- Git
+- GitHub
 
 ---
 
@@ -77,6 +82,9 @@ Customer-Churn-Prediction/
 ├── dataset/
 │   ├── churn.csv
 │   └── churn_cleaned.csv
+│
+├── images/
+│   └── churn_prediction.png
 │
 ├── models/
 │   ├── churn_model.pkl
